@@ -1,0 +1,62 @@
+Algoritmo designos
+	Definir día,mes, c Como Entero
+	Definir signo Como Caracter
+	Escribir "Ingresa el mes de nacimiento"
+	leer mes
+	Escribir "Ingresa el día de nacimiento"
+	Leer día
+	c = 0
+	si (mes == 12 y (dia >= 22 y dia <= 31)) o (mes == 1 y dia <= 20) Entonces
+		signo = "Capricornio"
+		c = 1
+	FinSi
+	si (mes == 1 y (dia >= 21 y dia <= 31)) o (mes == 2 y dia <= 19) Entonces
+		signo = "Acuario"
+		c = 1
+	FinSi
+	si (mes == 2 y (dia >= 20 y dia <= 29)) o (mes == 3 y dia <= 20) Entonces
+		signo = "Picis"
+		c = 1
+	FinSi
+	si (mes == 3 y (dia >= 21 y dia <= 31)) o (mes == 4 y dia <= 20) Entonces
+		signo = "Aries"
+		c = 1
+	FinSi
+	si (mes == 4 y (dia >= 21 y dia <= 30)) o ( mes == 5 y dia <= 20) Entonces
+		signo = "Tauro"
+		c = 1
+	FinSi
+	si (mes == 5 y (dia >= 1 y dia <= 31)) o (mes == 6 y dia <= 21) Entonces
+		signo = "Geminis"
+		c = 1
+	FinSi
+	si (mes == 6 y (dia >= 22 y dia <= 30)) o (mes == 7 y dia <= 22) Entonces
+		signo = "Cancer"
+		c = 1
+	FinSi
+	si (mes == 7 y (dia >= 23 y dia <= 31)) o (mes == 8 y dia <= 22) Entonces
+		signo = "Leo"
+		c = 1
+	FinSi
+	si (mes == 8 y (dia >= 23 y dia <= 31)) o (mes == 9 y dia <= 22) Entonces
+		signo = "Virgo"
+		c = 1
+	FinSi
+	si (mes == 9 y ( dia >= 23 y dia <= 30)) o (mes == 10 y dia <= 22) Entonces
+		signo = "Libra"
+		c = 1
+	FinSi
+	si (mes == 10 y (dia >= 23 y dia <= 31)) o (mes == 11 y dia <= 22) Entonces
+		signo = "Escorpion"
+		c = 1
+	FinSi
+	si (mes == 11 y (dia >= 23 y dia <= 30)) o (mes == 12 y dia <= 21) Entonces
+		signo = "Sagitario"
+		c = 1
+	FinSi
+	si c == 1 Entonces
+		Escribir "Tu signo del zodiaco es: ",signo
+	SiNo
+		Escribir "El signo del zodiaco no existe"
+	FinSi
+FinAlgoritmo
